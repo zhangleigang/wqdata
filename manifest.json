@@ -1,10 +1,13 @@
 {
-  "name": "wqdata",
-  "version": "1.0",
-  "description": "流量成交",
-  "permissions": ["webRequest", "webRequestBlocking","*://*.jd.com/*"],
-  "background": {
-    "scripts": ["background.js"]
-  },
-  "manifest_version": 2
+	"name": "wqdata",
+	"version": "1.0",
+	"description": "流量成交",
+	"permissions": ["webRequest", "webRequestBlocking", "*://*.jd.com/*"],
+	"background": {
+		"scripts": ["js/background.js", "js/jquery.min.js", "js/popup.js"]
+	},
+	"manifest_version": 2,
+	"browser_action": {
+		"default_popup": "popup.html"
+	}
 }
